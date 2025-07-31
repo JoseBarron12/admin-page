@@ -31,21 +31,21 @@ body {
     grid-template-rows: 1fr 1fr 1fr 8fr;
     row-gap: 48px;
     padding-top: var(--navbar-gap);
-    padding-right: var(--navbar-gap);
+    padding-right: 50px;
 }
 
 
 .sidebar-header {
     display: grid;
-    grid-template-columns: calc(var(--option-dimension) + var(--navbar-gap) + var(--navbar-gap)) 1fr;
-    grid-template-rows: calc(var(--option-dimension) + var(--navbar-gap) + var(--navbar-gap));
+    grid-template-columns: calc(var(--option-dimension) + var(--navbar-gap) ) 1fr;
+    grid-template-rows: 48px;
     column-gap: var(--navbar-gap);
 }
 
 
 .sidebar-header > img {
-    width: 100%;
-    height: auto;
+    width: 48px;
+    height: 48px;
 }
 .sidebar-header > h1 {
     display: grid;
