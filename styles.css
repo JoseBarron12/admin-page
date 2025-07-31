@@ -42,31 +42,37 @@ body {
 .sidebar-main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, minmax(16px,32px));
+    grid-template-rows: repeat(6, minmax(16px,24px));
 }
 
 .sidebar-footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(16px,32px));
+    grid-template-rows: repeat(3, minmax(16px,24px));
 }
 
 .sidebar-option {
     display: grid;
-    grid-template-columns: minmax(16px,32px) 1fr;
-    border: 1px solid red;
+    grid-template-columns: minmax(16px,24px) 1fr;
+    align-items: stretch;
 }
 
 .sidebar-option > * {
     border: 1px solid black;
 }
 
-
-
 .sidebar-option > img {
     height: 100%;
     width: 100%;
 }
+
+.sidebar-option > p {
+    font-weight: 600;
+    display: grid;
+    align-items: end;
+    padding-bottom: 1px;
+}
+
 
 .header {
     background-color: var(--primary);
