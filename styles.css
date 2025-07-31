@@ -37,7 +37,17 @@ body {
 .sidebar-header {
     display: grid;
     grid-template-columns: 48px 1fr;
+    grid-template-rows: 48px;
 }
+.sidebar-header > img {
+    width: 100%;
+    height: auto;
+}
+.sidebar-header > h1 {
+    display: grid;
+    align-items: center;
+}
+
 
 .sidebar-main {
     display: grid;
@@ -70,7 +80,6 @@ body {
     font-weight: 600;
     display: grid;
     align-items: end;
-    padding-bottom: 1px;
 }
 
 
