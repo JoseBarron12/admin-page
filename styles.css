@@ -4,7 +4,8 @@
     --primary: hsl(228, 55%, 74%);
     --secondary: hsl(266, 99%, 34%);
     --accent: hsl(275, 99%, 55%);
-    --navbar-gap:16px
+    --navbar-gap:16px;
+    --option-dimension: 32px;
 }
 
 * {
@@ -29,19 +30,19 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 8fr;
     row-gap: 48px;
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: var(--navbar-gap);
 }
 
-.sidebar > div {
-    border: 1px solid black;
-}
 
 .sidebar-header {
     display: grid;
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: calc(var(--option-dimension) + var(--navbar-gap)) 1fr;
     grid-template-rows: 48px;
-    background-color: pink;
+    column-gap: var(--navbar-gap);
+}
+
+.sidebar-header > * {
+    border: 1px solid black;
 }
 .sidebar-header > img {
     width: 100%;
@@ -57,24 +58,25 @@ body {
 .sidebar-main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, minmax(16px,24px));
-    background-color: blue;
+    grid-template-rows: repeat(6, var(--option-dimension));
     row-gap: var(--navbar-gap);
+    padding-left: var(--navbar-gap);
 }
 
 .sidebar-footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(16px,24px));
-    background-color: blueviolet;
+    grid-template-rows: repeat(3, var(--option-dimension));
     row-gap: var(--navbar-gap);
+    padding-left: var(--navbar-gap);
 }
 
 .sidebar-option {
     display: grid;
-    grid-template-columns: minmax(16px,24px) 1fr;
+    grid-template-columns: var(--option-dimension) 1fr;
     align-items: stretch;
     column-gap: var(--navbar-gap);
+
 }
 
 .sidebar-option > * {
