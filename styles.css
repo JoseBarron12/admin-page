@@ -34,6 +34,11 @@ body {
     border: 1px solid black;
 }
 
+.sidebar-header {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+
 .sidebar-main {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,7 +62,8 @@ body {
 }
 
 
-img[src$=".svg"] {
+
+.sidebar-option > img {
     height: 100%;
     width: 100%;
 }
