@@ -37,18 +37,29 @@ body {
 .sidebar-main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, minmax(16px,48px));
+    grid-template-rows: repeat(6, minmax(16px,32px));
 }
 
 .sidebar-footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(16px,48px));
+    grid-template-rows: repeat(3, minmax(16px,32px));
+}
+
+.sidebar-option {
+    display: grid;
+    grid-template-columns: minmax(16px,32px) 1fr;
+    border: 1px solid red;
+}
+
+.sidebar-option > * {
+    border: 1px solid black;
 }
 
 
 img[src$=".svg"] {
-    height: 32px;
+    height: 100%;
+    width: 100%;
 }
 
 .header {
