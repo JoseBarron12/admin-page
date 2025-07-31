@@ -34,6 +34,19 @@ body {
     border: 1px solid black;
 }
 
+.sidebar-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(16px,48px));
+}
+
+.sidebar-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(16px,48px));
+}
+
+
 img[src$=".svg"] {
     height: 32px;
 }
