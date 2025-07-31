@@ -4,6 +4,7 @@
     --primary: hsl(228, 55%, 74%);
     --secondary: hsl(266, 99%, 34%);
     --accent: hsl(275, 99%, 55%);
+    --navbar-gap:16px
 }
 
 * {
@@ -27,7 +28,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 8fr;
-    row-gap: 50px;
+    row-gap: 48px;
 }
 
 .sidebar > div {
@@ -47,6 +48,7 @@ body {
 .sidebar-header > h1 {
     display: grid;
     align-items: center;
+
 }
 
 .sidebar-main {
@@ -54,7 +56,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, minmax(16px,24px));
     background-color: blue;
-    row-gap: 25px;
+    row-gap: var(--navbar-gap);
 }
 
 .sidebar-footer {
@@ -62,13 +64,14 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, minmax(16px,24px));
     background-color: blueviolet;
-     row-gap: 25px;
+    row-gap: var(--navbar-gap);
 }
 
 .sidebar-option {
     display: grid;
     grid-template-columns: minmax(16px,24px) 1fr;
     align-items: stretch;
+    column-gap: var(--navbar-gap);
 }
 
 .sidebar-option > * {
