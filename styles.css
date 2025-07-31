@@ -32,6 +32,7 @@ body {
     row-gap: 48px;
     padding-top: var(--navbar-gap);
     padding-right: 50px;
+    color: var(--text);
 }
 
 
@@ -46,6 +47,7 @@ body {
 .sidebar-header > img {
     width: 48px;
     height: 48px;
+    filter: invert(87%) sepia(11%) saturate(321%) hue-rotate(196deg) brightness(103%) contrast(93%);
 }
 .sidebar-header > h1 {
     display: grid;
@@ -81,7 +83,10 @@ body {
 .sidebar-option > img {
     height: 100%;
     width: 100%;
+    filter: invert(87%) sepia(11%) saturate(321%) hue-rotate(196deg) brightness(103%) contrast(93%);
 }
+
+
 
 .sidebar-option > p {
     display: grid;
