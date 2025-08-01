@@ -92,8 +92,6 @@ body {
     filter: invert(87%) sepia(11%) saturate(321%) hue-rotate(196deg) brightness(103%) contrast(93%);
 }
 
-
-
 .sidebar-option > p {
     display: grid;
     align-items: center;
@@ -120,7 +118,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: var(--navbar-gap) calc(var(--navbar-gap) * 2) 0 calc(var(--navbar-gap) * 2);
-    border: 1px solid black;
 }
 
 .header-search {
@@ -137,13 +134,19 @@ body {
     background-color: var(--background);
 }
 
+.header-search > img{
+    filter: invert(7%) sepia(9%) saturate(4906%) hue-rotate(196deg) brightness(94%) contrast(103%);
+}
 .header-options {
     display: grid;
     grid-template-columns: repeat(2, var(--option-dimension)) 48px max-content;
     align-items: center;
     column-gap: var(--navbar-gap);
     justify-content: flex-end;
+}
 
+.header-options > img{
+    filter: invert(7%) sepia(9%) saturate(4906%) hue-rotate(196deg) brightness(94%) contrast(103%);
 }
 
 .profile-pic{
@@ -179,7 +182,6 @@ body {
 }
 
 .header-options > * {
-    
 }
 
 .header-search > img, .header-options > img {
