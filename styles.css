@@ -109,6 +109,34 @@ body {
     background-color: var(--background);
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header > *{
+    border: solid 2px black;
+}
+
+.header-top > * {
+    border: solid 1px black;
+}
+
+.header-bottom > * {
+    border: 1px solid black;
+}
+
 .header-search > img, .header-options > img {
     width: var(--option-dimension);
     height: auto;
