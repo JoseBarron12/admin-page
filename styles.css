@@ -182,8 +182,22 @@ body {
     align-self: center;
 }
 
-.text-container > * {
-    
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3,120px);
+    grid-template-rows: 40px;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: var(--navbar-gap);
+}
+
+.header-buttons > button {
+    background-color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    border-radius: 25px;
+    border: none;
 }
 
 .main-profile-pic {
@@ -197,7 +211,6 @@ body {
     border-radius: 50%;
     object-position: 100% 0%;
 }
-
 
 
 .header-search > img, .header-options > img {
