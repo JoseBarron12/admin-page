@@ -99,9 +99,7 @@ body {
     font-weight: 600;
 }
 
-.main-content {
-    background-color: var(--background);
-}
+
 
 .header {
     background-color: var(--primary);
@@ -222,3 +220,25 @@ body {
     height: 100%;
 }
 
+.main-content {
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-content > * {
+    border: 1px solid black;
+}
+
+
+.grid-container {
+    background-color: var(--primary);
+}
+
+.trending-container {
+    background-color: var(--primary);
+}
+
+.announcement-container {
+    background-color: var(--primary);
+}
