@@ -107,7 +107,8 @@ body {
     background-color: var(--primary);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: calc(48px + var(--navbar-gap)) 86px;
+    grid-template-rows: calc(48px + var(--navbar-gap)) calc(86px + var(--navbar-gap));
+    row-gap: var(--navbar-gap);
 }
 
 .header-top {
@@ -167,6 +168,7 @@ body {
 .header-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding:  0 calc(var(--navbar-gap) * 2) var(--navbar-gap) calc(var(--navbar-gap) * 2);
 }
 
 .header-intro {
