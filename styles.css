@@ -123,6 +123,14 @@ body {
 .header-search {
     display: grid;
     grid-template-columns: var(--option-dimension) 1fr;
+    align-items: center;
+}
+
+.header-search > input {
+    height: var(--option-dimension);
+    border-radius: 25px;
+    border: none;
+    background-color: var(--background);
 }
 
 .header-options {
