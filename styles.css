@@ -182,7 +182,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     align-self: center;
+    gap: 4px;
 }
+
 
 .header-buttons {
     display: grid;
