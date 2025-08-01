@@ -167,12 +167,23 @@ body {
 .header-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
 }
 
 .header-intro {
     display: grid;
     grid-template-columns: 86px max-content;
+    column-gap: var(--navbar-gap);
+}
+
+.text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    align-self: center;
+}
+
+.text-container > * {
+    
 }
 
 .main-profile-pic {
