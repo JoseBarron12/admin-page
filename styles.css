@@ -135,7 +135,27 @@ body {
 
 .header-options {
     display: grid;
-    grid-template-columns: repeat(2, var(--option-dimension)) 1fr 2fr;
+    grid-template-columns: repeat(2, var(--option-dimension)) 48px 1fr;
+    align-items: center;
+}
+
+.profile-pic{
+    width: 100%;
+    height: 48px;
+}
+
+.profile-pic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 100% 0%;
+}
+
+.header-options > h4 
+{
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .header-bottom {
