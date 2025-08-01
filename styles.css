@@ -8,6 +8,7 @@
     --secondary: hsl(266, 99%, 34%);
     --accent: hsl(275, 99%, 55%);
     --navbar-gap:16px;
+    --header-top-gap:8px;
     --option-dimension: 24px;
 }
 
@@ -124,6 +125,7 @@ body {
     display: grid;
     grid-template-columns: var(--option-dimension) 1fr;
     align-items: center;
+    column-gap: var(--header-top-gap);
 }
 
 .header-search > input {
@@ -135,8 +137,10 @@ body {
 
 .header-options {
     display: grid;
-    grid-template-columns: repeat(2, var(--option-dimension)) 48px 1fr;
+    grid-template-columns: repeat(2, var(--option-dimension)) 48px max-content;
     align-items: center;
+    column-gap: var(--navbar-gap);
+    justify-content: flex-end;
 }
 
 .profile-pic{
@@ -164,15 +168,15 @@ body {
 }
 
 .header-top > * {
-    border: solid 1px black;
+
 }
 
 .header-bottom > * {
-    border: 1px solid black;
+
 }
 
 .header-options > * {
-    border: 1px solid black;
+    
 }
 
 .header-search > img, .header-options > img {
