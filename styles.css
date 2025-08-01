@@ -237,8 +237,12 @@ body {
 
 
 .grid-container {
-    background-color: var(--primary);
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+
+.grid-item {
+    height: 200px;
 }
 
 .info-view {
