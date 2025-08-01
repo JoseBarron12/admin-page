@@ -109,3 +109,8 @@ body {
     background-color: var(--background);
 }
 
+.header-search > img, .header-options > img {
+    width: var(--option-dimension);
+    height: auto;
+}
+
