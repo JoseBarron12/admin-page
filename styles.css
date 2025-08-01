@@ -230,15 +230,40 @@ body {
     border: 1px solid black;
 }
 
+.project-view {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+}
+
 
 .grid-container {
     background-color: var(--primary);
+    
 }
 
-.trending-container {
-    background-color: var(--primary);
+.info-view {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
 }
 
 .announcement-container {
     background-color: var(--primary);
 }
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+}
+
+
+.trending-container {
+    background-color: var(--primary);
+}
+
