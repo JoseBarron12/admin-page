@@ -241,7 +241,7 @@ body {
 }
 
 .grid-item {
-    height: 250px;
+    height: 200px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr var(--option-dimension);
@@ -250,7 +250,9 @@ body {
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
 }
 
-
+.grid-item > p {
+    font-size: 0.9rem;
+}
 
 .grid-icons {
     display: grid;
