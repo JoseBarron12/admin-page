@@ -84,8 +84,8 @@ body {
     grid-template-columns: var(--option-dimension) 1fr;
     align-items: stretch;
     column-gap: var(--navbar-gap);
-
 }
+
 
 .sidebar-option > img {
     height: 100%;
@@ -98,6 +98,10 @@ body {
     align-items: center;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.sidebar-option > p:hover{
+    text-shadow: 0px 0px 5px var(--text);
 }
 
 .header {
@@ -392,4 +396,16 @@ body {
 .trending-item-text > p {
     font-size: 0.8rem;
     color: var(--primary);
+}
+
+img[src$=".svg"]:hover {
+    filter: invert(15%) sepia(83%) saturate(4720%) hue-rotate(250deg) brightness(84%) contrast(135%);
+}
+
+button {
+    background-color: var(--accent);
+}
+
+button:hover {
+    text-shadow: 0px 0px 5px var(--text);
 }
