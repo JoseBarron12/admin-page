@@ -344,6 +344,7 @@ body {
     grid-template-rows: repeat(4, 64px);
     padding: var(--navbar-gap);
     row-gap: var(--navbar-gap);
+    border-radius: 8px;
 }
 
 .trending-item {
