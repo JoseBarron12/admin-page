@@ -99,8 +99,6 @@ body {
     font-weight: 600;
 }
 
-
-
 .header {
     background-color: var(--primary);
     display: grid;
@@ -248,6 +246,7 @@ body {
     background-color: var(--primary);
     border: 1px solid black;
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
+    row-gap: 4px;
 }
 
 .grid-item > p {
