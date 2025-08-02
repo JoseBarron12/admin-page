@@ -226,8 +226,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .project-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -280,9 +278,11 @@ body {
 }
 
 .info-view {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: calc(var(--navbar-gap)) var(--navbar-gap) calc(var(--navbar-gap) * 2 + 8px) 0 ;
+    row-gap: calc(var(--navbar-gap));
 }
 
 .announcements {
@@ -294,7 +294,6 @@ body {
 
 .announcement-text {
     color: var(--text);
-
 }
 
 .announcement-container {
@@ -303,6 +302,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     padding: calc(var(--navbar-gap) * 2) var(--navbar-gap);
+    border-radius: 8px;
 }
 
 .announcement-item {
@@ -320,17 +320,18 @@ body {
 }
 
 .announcement-item:not(:nth-last-child(1)) {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     border-bottom: 1px solid black;
 }
 .announcement-item:not(:nth-child(1)) {
-    padding-top: 8px;
+    padding-top: 12px
 }
 
 .trending {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
+    row-gap: 8px;
 }
 
 
