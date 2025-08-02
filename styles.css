@@ -26,6 +26,7 @@ body {
     grid-template-rows: 1fr 5fr;
     font-family: 'Inter';
     font-weight: 400;
+    overflow-y: hidden;
 }
 
 .sidebar {
@@ -84,7 +85,6 @@ body {
     column-gap: var(--navbar-gap);
 
 }
-
 
 .sidebar-option > img {
     height: 100%;
@@ -165,6 +165,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:  0 calc(var(--navbar-gap) * 2) var(--navbar-gap) calc(var(--navbar-gap) * 2);
+    column-gap: var(--navbar-gap);
 }
 
 .header-intro {
@@ -222,6 +223,7 @@ body {
     background-color: var(--background);
     display: grid;
     grid-template-columns: 3fr 1fr;
+    overflow: hidden;
 }
 
 .main-content > * {
@@ -234,7 +236,13 @@ body {
     grid-template-rows: max-content 1fr;
     padding: var(--navbar-gap) var(--navbar-gap) calc(var(--navbar-gap) * 2 + 8px) var(--navbar-gap);
     gap: 8px;
+    overflow-y: scroll;
 }
+
+.project-view::-webkit-scrollbar {
+    display: none;
+}
+
 
 .grid-container {
     display: grid;
@@ -248,11 +256,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr var(--option-dimension);
     background-color: var(--primary);
-    border: 1px solid black;
+
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
     border-radius: 8px;
     border-left: 8px solid var(--accent);
 }
+
 
 .main-text > h3 {
     color: var(--text);
