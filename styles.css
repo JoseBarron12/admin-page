@@ -256,7 +256,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr var(--option-dimension);
     background-color: var(--primary);
-
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
     border-radius: 8px;
     border-left: 8px solid var(--accent);
@@ -303,6 +302,24 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+}
+
+.announcement-item > p {
+    font-size: 0.8rem;
+}
+
+.announcement-item > h4 {
+    font-size: 0.85rem;
+}
+
+.announcement-item > * {
+    border: 1px solid black;
 }
 
 .trending {
