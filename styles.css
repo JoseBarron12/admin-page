@@ -288,6 +288,10 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.info-view > * {
+    border: 1px solid black;
+}
+
 .announcements {
     display: grid;
     grid-template-columns: 1fr;
@@ -296,6 +300,9 @@ body {
 
 .announcement-container {
     background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .trending {
