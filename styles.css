@@ -231,11 +231,14 @@ body {
 .project-view {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
+    padding: var(--navbar-gap) var(--navbar-gap) 0 var(--navbar-gap);
 }
+
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    gap: var(--navbar-gap);
 }
 
 .grid-item {
