@@ -334,6 +334,9 @@ body {
     row-gap: 8px;
 }
 
+.trending-text {
+    color: var(--text);
+}
 .trending-container {
     background-color: var(--primary);
     display: grid;
@@ -341,3 +344,7 @@ body {
     grid-template-rows: repeat(4, 1fr);
 }
 
+.trending-profile > img {
+    width: var(--option-dimension);
+    height: auto;
+}
