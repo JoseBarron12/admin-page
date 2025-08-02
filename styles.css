@@ -235,14 +235,28 @@ body {
     grid-template-rows: max-content 1fr;
 }
 
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
 
 .grid-item {
-    height: 200px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content var(--option-dimension);
+    border: 1px solid black;
+    background-color: var(--primary);
+}
+
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(3, var(--option-dimension));
+}
+
+.grid-icons > img {
+    height: 100%;
+    width: 100%;
 }
 
 .info-view {
