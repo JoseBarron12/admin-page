@@ -280,7 +280,7 @@ body {
 .info-view {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     padding: calc(var(--navbar-gap)) var(--navbar-gap) calc(var(--navbar-gap) * 2 + 8px) 0 ;
     row-gap: calc(var(--navbar-gap));
 }
@@ -334,8 +334,10 @@ body {
     row-gap: 8px;
 }
 
-
 .trending-container {
     background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
 
