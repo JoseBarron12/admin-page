@@ -236,7 +236,6 @@ body {
     gap: 8px;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
@@ -244,13 +243,15 @@ body {
 }
 
 .grid-item {
-    height: 200px;
+    height: 225px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr var(--option-dimension);
     background-color: var(--primary);
     border: 1px solid black;
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
+    border-radius: 8px;
+    border-left: 8px solid var(--accent);
 }
 
 .grid-item > p {
