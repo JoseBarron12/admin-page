@@ -229,9 +229,11 @@ body {
 }
 
 .project-view {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
-    padding: var(--navbar-gap) var(--navbar-gap) 0 var(--navbar-gap);
+    padding: var(--navbar-gap) var(--navbar-gap) calc(var(--navbar-gap) * 2 + 8px) var(--navbar-gap);
+    gap: 8px;
 }
 
 
@@ -249,7 +251,6 @@ body {
     background-color: var(--primary);
     border: 1px solid black;
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
-    row-gap: 4px;
 }
 
 .grid-item > p {
