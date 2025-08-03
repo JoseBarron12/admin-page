@@ -27,7 +27,6 @@ body {
     grid-template-rows: 1fr 5fr;
     font-family: 'Inter';
     font-weight: 400;
-    overflow-y: hidden;
 }
 
 .sidebar {
