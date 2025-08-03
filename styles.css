@@ -110,6 +110,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: calc(48px + var(--navbar-gap)) calc(86px + var(--navbar-gap));
     row-gap: var(--navbar-gap);
+    box-shadow: 0px 1px 1px black;
 }
 
 .header-top {
@@ -238,6 +239,7 @@ body {
     overflow: hidden;
 }
 
+
 .project-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -266,6 +268,7 @@ body {
     padding: calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) calc(var(--navbar-gap) * 2) var(--navbar-gap);
     border-radius: 8px;
     border-left: 8px solid var(--accent);
+    box-shadow: 1px 1px 5px black;
 }
 
 
@@ -324,6 +327,7 @@ body {
     padding-top: calc(var(--navbar-gap) + 8px);
     border-radius: 8px;
     row-gap: 8px;
+    box-shadow: 1px 1px 5px black;
 }
 
 .announcement-item {
@@ -369,6 +373,7 @@ body {
     padding: var(--navbar-gap);
     row-gap: var(--navbar-gap);
     border-radius: 8px;
+    box-shadow: 1px 1px 5px black;
 }
 
 .trending-item {
@@ -420,13 +425,29 @@ img[src$=".svg"]:hover {
     color: var(--accent);
 }
 
+.grid-item:hover,.announcement-container:hover, .trending-container:hover {
+    scale: 1.01;
+}
 
+h3:hover {
+    text-shadow: 0px 0px 5px var(--text);
+}
 
-button {
+button, input{
     background-color: var(--accent);
+    box-shadow: 1px 1px 5px black;
+
 }
 
 button:hover {
     text-shadow: 0px 0px 5px var(--text);
     scale: 1.1;
+    color: var(--text);
+}
+
+input:focus {
+    outline: none;
+    scale: 1.01;
+    color: var(--text);
+    padding-left: 8px;
 }
